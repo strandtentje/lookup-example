@@ -1,0 +1,19 @@
+<h1>Forms</h1>
+
+<h2>Search</h2>
+<form method="post" action="/search">
+	<label for="keywords">Keywords seperated by spaces</label>
+	<input type="text" name="keywords" value="{% keywords %}">
+	<input type="submit" value="Search">
+</form>
+
+<h2>Save</h2>
+<form method="post" action="/save">
+	<label for="meta">Meta (single word, identity)</label>
+	<input type="text" name="meta" value="{% meta %}">
+	<label for="keywords">Keywords seperated by spaces</label>
+	<input type="text" name="keywords" value="{% keywords %}">
+	<label for="content">Payload</label>
+	<textarea name="content">{% content %}</textarea>
+	<input type="submit" value="Add">
+</form>

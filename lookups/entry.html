@@ -1,0 +1,12 @@
+<li class="entry">
+	<span class="keywords">
+		{% keywords %}
+	</span>
+	<div class="payload">
+		{% content %}
+	</div>
+	<form class="remove" method="post" action="/remove">
+		<input type="hidden" name="meta" value="{% meta %}">
+		<input type="submit" value="Remove">
+	</form>
+</li>
